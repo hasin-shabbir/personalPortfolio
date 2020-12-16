@@ -1,0 +1,60 @@
+.welcome-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/myPhotos/welcome.jpg");
+  background-position: center; /* Center the image */
+  height: 654px;
+}
+/*adds an overlay to the background image*/
+.welcome-wrapper::before{
+  content: "";
+  position: absolute;
+  top:0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.60);
+}
+.welcome-text{
+  top:10%;
+  opacity: 100%;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.welcome-text hr{
+  border-top: 2px solid white;
+  width: 400px;
+}
+@media screen and (max-width:768px) {
+  .welcome-text hr{width: 200px;}
+}
+#myName{
+  margin:0 0 0 0;
+  font-size:50px;
+  text-transform: capitalize;
+}
+.welcome-text p{
+  font-size: 18px;
+}
+.welcome-wrapper a{
+  background-color: rgba(255,255,255,0.30);
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 8px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.welcome-wrapper a:hover{
+  background-color: white;
+  color: black;
+}

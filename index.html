@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hasin's Portfolio</title>
+  <meta dir="ltr" lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="indexStyles.css">
+  <link rel="stylesheet" href="ribbonStyles.css">
+  <link rel="stylesheet" href="navBarStyles.css">
+  <link rel="stylesheet" href="welcomeStyles.css">
+  <link rel="stylesheet" href="preloader.css">
+  <link rel="stylesheet" href="portfolioStyles.css">
+  <link rel="stylesheet" href="experiencesStyles.css">
+  <link rel="stylesheet" href="testimonialsStyles.css">
+  <link rel="stylesheet" href="contactForm.css">
+  <link rel="stylesheet" href="footerStyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Design inspired from Marqa by Ahmed Beheiry-->
+</head>
+<body>
+
+  <script src="scripts/preloader.js" charset="utf-8"></script>
+  <div class="container">
+    <!--start of pre-loader-->
+    <div class="loader-container">
+        <div class="loader">Collecting my thoughts</div>
+    </div>
+    <!--end of pre-loader-->
+    <!-- Top Navigation Menu -->
+    <div class="topnav navBarShadow" id="myTopnav">
+      <a href="#home" class="active" style="width: 0px;"><img id="logo" src="images/logo.png" alt="Hasin"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myNav" class="overlay">
+         <!-- Button to close the overlay navigation -->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
+           <!-- Overlay content -->
+           <div class="overlay-content">
+             <a href="#home"  onclick="javascript:closeNav()">Home</a>
+             <a href="#about"  onclick="javascript:closeNav()">About Me</a>
+             <a href="#skills"  onclick="javascript:closeNav()">Skills</a>
+             <a href="#portfolio"  onclick="javascript:closeNav()">Portfolio</a>
+             <a href="#experience"  onclick="javascript:closeNav()">Experiences</a>
+             <a href="#testimonials"  onclick="javascript:closeNav()">Testimonials</a>
+             <a href="#contact" onclick="javascript:closeNav()">Contact Me</a>
+             <a href="https://drive.google.com/file/d/1FluyP9szGWSVFkwcWQOoG1__SVhRxoWc/view" onclick="javascript:closeNav()" target="_blank">Resume</a>
+           </div>
+        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+      </div>
+    <div class="content">
+
+      <!--<div class="corner-ribbon bottom-left sticky black"><a href="https://drive.google.com/file/d/1FluyP9szGWSVFkwcWQOoG1__SVhRxoWc/view" target="_blank">Resume</a></div>-->
+
+      <section class="welcome-wrapper" id="home">
+        <div class="welcome-text">
+          <p>HELLO, IT'S ME</p>
+          <hr>
+          <h1 id="myName">MUHAMMAD HASIN SHABBIR</h1>
+          <hr>
+          <p>STUDENT | DEVELOPER | ASTROPHILE </p>
+          <a class="welcome-button" href="#about">Read more</a>
+          <a class="welcome-button" href="#portfolio">My works</a>
+        </div>
+      </section>
+
+
+      <section class="about-me-wrapper" id="about">
+        <div class="about-me-container" style="padding-bottom: 0px;">
+          <div class="row">
+            <div class="column4">
+
+            </div>
+            <div class="image">
+              <img id="pic" src="images/myPhotos/myFace.jpg" alt="my face">
+            </div>
+            <div class="intro-text">
+    					<h2 class="intro-name">Muhammad Hasin Shabbir</h2>
+    					<hr class="heading-line">
+    					<p class="intro-summary">Rising Sophomore at New York University in Abu Dhabi</p>
+    					<p class="intro-description">I am an individual interested in the fields of Computer Science, Economics and Interactive Media. Having had a taste of each of these disciplines over the past few years, I am now motivated towards exploring intellectual endeavors at the intersection of these fields and making an impact whilst ensuring a continued learning experience for personal and professional growth. I love taking on challenges, learning new things and meeting new people.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-container top-gap">
+          <div class="row">
+            <div class="about-contact">
+    					<h3 class="main-heading">personal info</h3>
+    					<hr class="heading-line-small">
+    					<div class="personal-wrapper">
+    						<span>
+    							<strong>name: </strong>Muhammad Hasin Shabbir</span>
+    						<span>
+    							<strong>E-mail: </strong>
+    							<a href="mailto:hasin.shabbir@nyu.edu">hasin.shabbir@nyu.edu</a>
+    						</span>
+    						<span>
+    							<strong>phone number: </strong>+(971) 501 37184</span>
+    						<span>
+    							<strong>website: </strong>
+    							<a href="#">www.hasinshabbir.com</a>
+    						</span>
+    					</div>
+            </div>
+            <div class="intro-text">
+              <button class="accordion">What is my goal?</button>
+              <section class="panel">
+                <p>While I do have some material targets set that I would want to achieve, my true goal is making a positive impact. No matter how big or small that impact is, whatever I do I want to do in a way that will make someone's life better in some aspect. I believe it is this experience that will offer me the opportunities to engage and learn a lot more, eventually growing as a person.</p>
+              </section>
+
+              <button class="accordion">What am I really good at?</button>
+              <section class="panel">
+                <p>Even if perfection is not possible, I think there are some things I am quite proficient at.  After spending countless hours learning, practicing and rectifying mistakes, <strong>computer programming and problem solving ability</strong> are some of the strongest among my skill set. Additionally, I believe I have <strong>good communication skills</strong> and can convey my message in an easy yet effective manner. I have also been told I can be a really <strong>good friend</strong> - maybe you should see for yourself? :)</p>
+              </section>
+
+              <button class="accordion">What keeps me going?</button>
+              <section class="panel">
+                <p>Having read it in Grade 6, William E. Hickson's "If at first you don't succeed, try try try again" pops up in my mind everytime I face a challenging situation. This philosophy, along with my motivation of being able to make a positive impact, inculcates a "never give up" philosophy in my mind. Thus I keep on going, overcoming challenges and learning from them no matter how difficult things may seem.</p>
+              </section>
+
+              <button class="accordion">What are my hobbies?</button>
+              <section class="panel">
+                <p>I am very fond of music and, due to this love I have for it, spend my free time learning and practicing <strong>guitar</strong>. Strumming and experimenting
+                with the strings is my way of giving myself a break. I am also a sports enthusiast and enjoy playing <strong>football (Real Madrid fan) and cricket</strong>. Absolutely
+                crazy about <strong>stargazing and astronomy</strong>. Apart from that, I like to keep myself updated with national and international political climate.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div class="skills-wrapper" id="skills">
+        <div class="skills-container">
+          <div class="skills-heading">
+            <h1>Technical Skills</h1>
+            <hr>
+            <div class="skill-label">
+              <p>Just starting</p>
+              <p>I'm pretty good</p>
+            </div>
+          </div>
+          <div id="codeconSkills">
+            <div class="codeconSkillbar">
+              <div class="skill-Cpp " id="techSkill">
+                <span class="codeconSkillArea">C++<img src="images/icon/cpp.png" alt="Cpp"></span>
+              </div>
+            </div>
+            <div class="codeconSkillbar" id="techSkill">
+              <div class="skill-Py " id="techSkill">
+                <span class="codeconSkillArea">Python<img src="images/icon/python.png" alt="python"></span>
+              </div>
+            </div>
+            <div class="codeconSkillbar">
+              <div class="skill-HTML " id="techSkill">
+                <span class="codeconSkillArea">HTML5<img src="images/icon/html5.png" alt="HTML5"></span>
+              </div>
+            </div>
+            <div class="codeconSkillbar">
+              <div class="skill-JS " id="techSkill">
+                <span class="codeconSkillArea">JavaScript<img src="images/icon/javascript.png" alt="JavaScript"></span>
+              </div>
+            </div>
+            <div class="codeconSkillbar">
+              <div class="skill-CSS " id="techSkill">
+                <span class="codeconSkillArea">CSS<img src="images/icon/css3.png" alt="CSS3"></span>
+              </div>
+            </div>
+            <div class="codeconSkillbar">
+              <div class="skill-Mailchimp " id="techSkill">
+                <span class="codeconSkillArea">Mailchimp<img src="images/icon/mailchimp.png" alt="mailchimp"></span>
+              </div>
+            </div>
+            <div class="skills-heading-small">
+              <h1>Other Skills</h1>
+              <hr>
+            </div>
+            <div class="other-skills-container">
+              <div class="otherSkill">
+                <img src="images/icon/socialMedia.png" alt="social media">
+                <p>Social Media Marketing</p>
+              </div>
+              <div class="otherSkill">
+                <img src="images/icon/communication.png" alt="communication">
+                <p>Communication</p>
+              </div>
+              <div class="otherSkill">
+                <img src="images/icon/problemSolving.png" alt="problem solving">
+                <p>Creative Problem Solving</p>
+              </div>
+              <div class="otherSkill">
+                <img src="images/icon/design.png" alt="design">
+                <p>Canva | Photoshop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <canvas class="background"></canvas>
+      </div>
+
+
+      <div class="portfolio-wrapper" id="portfolio">
+        <div class="card-wrapper">
+          <h1>My Projects</h1>
+          <hr>
+          <h2>Click/Hover for Details</h2>
+          <div class="card-cols">
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-container">
+                <div class="front" style="background-image: url('images/funkaari.jpg')">
+                  <div class="inner">
+                    <p>Funkaari</p>
+                    <span>VR Application</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>Programmed in C# using Unity, the application provides an environment for painting in 3 dimensions.</p>
+                    <a href="https://drive.google.com/file/d/1YO57zIv5Z9hqZ9aeCsYMLy8MnEoOAkJ-/view?usp=sharing" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://hasin-shabbir.github.io/nyuadSites/" target="_blank">
+              <div class="card-container">
+                <div class="front" style="background-image: url('images/nyuad_front.png')">
+                  <div class="inner">
+                    <p>NYUAD Sites</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>A collection of NYU Abu Dhabi related webpages and groups.</p>
+                    <a href="https://hasin-shabbir.github.io/nyuadSites/" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://docs.google.com/presentation/d/1lrNK2iRwvUvGq9c-Qx0aIajkBD5kY3WeM1xz102qd1Q/edit?usp=sharing" target="_blank">
+              <div class="card-container">
+                <div class="front" style="background-image: url('images/kickboxing.jpg')">
+                  <div class="inner">
+                    <p>SoloTrainer</p>
+                    <span>Combat Sports Training Device</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>Arduino based device that provides training feedback to combat sports athletes.</p>
+                    <a href="https://docs.google.com/presentation/d/1lrNK2iRwvUvGq9c-Qx0aIajkBD5kY3WeM1xz102qd1Q/edit?usp=sharing" target="_blank">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-container">
+                <div class="front" style="background-image: url('images/nyuad_back.png')">
+                  <div class="inner">
+                    <p>NYUAD Course Review</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>(UNDER DEVELOPMENT) Website to post and access reviews for NYUAD Courses.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        		</div>
+         </div>
+      </div>
+
+
+      <section class="experiences-wrapper" id="experience">
+        <h1>Work Experiences</h1>
+        <hr>
+        <h2>Keep scrolling</h2>
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Resident Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Aug '20 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">New York Uninversity in Abu Dhabi</div>
+              <div class="desc" id="experience-item">Work with Residential Education department to manage affairs related to student residential life on campus.</div>
+            </div>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Vice-President</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jun '20 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">Pakistan Students Association</div>
+              <div class="desc" id="experience-item">Elected as the Vice-President for the largest cultural Student Interest Group at New York University in Abu Dhabi.</div>
+            </div>
+          </li>
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Communication Officer</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Feb '20 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">Office of Community Outreach NYUAD</div>
+              <div class="desc" id="experience-item">Responsible for overseeing internal communications with the student-body and offices, social media management, newsletter drafting and external communication with partners and stakeholders.</div>
+            </div>
+          </li>
+          <!-- Item 4 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">President</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jun '20 - Present</span></span>
+              </div>
+              <div class="institute" id="experience-item">Aerospace Club NYUAD</div>
+              <div class="desc" id="experience-item">Served as the Communications Officer for Aerospace Club during my first semester at NYUAD; managed communications with the student body, offices, and external partners. Promoted to the role of Vice-President and organized activities for the student body in Spring'20. Currently serving as the President of the Aerospace Club, SEDS UAE.</div>
+            </div>
+          </li>
+          <!-- Item 5 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Documentation Assistant</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jun '18 - Jul '18</span></span>
+              </div>
+              <div class="institute" id="experience-item">Lahore Conservation Society</div>
+              <div class="desc" id="experience-item">Geomapped neglected sites of historical significance in one of Asia's largest graveyard 'Miani Saheb' and interviewed local community to document their involvement with the shrines. The purpose was to get legal protection for these sites important to the community against the threat of demolition and deterioration.</div>
+            </div>
+          </li>
+          <!-- Item 6 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Founder</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Jul '17 - Jul '18</span></span>
+              </div>
+              <div class="institute" id="experience-item">Madad</div>
+              <div class="desc" id="experience-item">Founded a student-led volunteer organization to raise funds across high schools in Lahore for providing food, clothing and stipends to cover tuition to the underprivileged in Lahore's outskirts.</div>
+            </div>
+          </li>
+          <!-- Item 7 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa" id="experience-item"></span>
+                <span class="flag" id="experience-item">Volunteer Teacher</span>
+                <span class="time-wrapper" id="experience-item"><span class="time">Feb '18 - Apr '18</span></span>
+              </div>
+              <div class="institute" id="experience-item">Asian School</div>
+              <div class="desc" id="experience-item">Planned and conducted STEM activities for a balanced program of instruction, demonstration and work time that provided students with opportunities to observe, question and investigate; Mentored students needing extra assistance understanding lessons or concepts.</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="testimonials-wrapper" id="testimonials">
+        <h2>Testimonials</h2>
+        <hr>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Lorem ipsum</p>
+          </div>
+
+          <div class="mySlides">
+            <q>Changed Lorem ipsum amet sit dolor</q>
+            <p class="author">- Lorem ipsum</p>
+          </div>
+
+          <div class="mySlides">
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
+            <p class="author">- Lorem ipsum</p>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+      </section>
+
+
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted){window.location='https://www.google.com';}"></iframe>
+      <section class="contact-wrapper" id="contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <div class="form-container">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdngNRiMLGWfRLyEuG2NKXVaqoo3gyNJIaM1c_UKYKh91OWpQ/formResponse" method="POST" target="hidden_iframe">
+    				<div class="contact-form-content">
+  	    				<input type="text" name="entry.860598839" placeholder="Your Name" id="formItem-1" required>
+  	    				<input type="text" name="entry.1376670077" placeholder="Enter a Valid Email Address" id="formItem-2" required>
+  	    				<textarea name="entry.866587573" placeholder="Your Message" id="formItem-3" required></textarea>
+    	  				<div class="submitButton">
+        						<button id="submit" type="submit" target="hidden_iframe">Send</button>
+    					  </div>
+    				</div>
+    			</form>
+        </div>
+        <div class="contact-row">
+          <a class="contactCol4" href="tel:+971501437184">
+            <i class="fa fa-phone center"></i>
+            <div class="contactInfo">
+              <h2>Call Me</h2>
+              <div><span>(+971) 501 437184</span></div>
+              <div><span>(+92) 322 4115 810</span></div>
+            </div>
+          </a>
+          <a class="contactCol4" href="mailto:hasin.shabbir@nyu.edu">
+            <i class="fa fa-envelope center"></i>
+            <div class="contactInfo">
+              <h2>Send A Message</h2>
+              <div><span>hasin.shabbir@nyu.edu</span></div>
+            </div>
+          </a>
+          <a class="contactCol4" href="https://www.google.com/maps/@31.7079529,74.0232463,83m" target="_blank">
+            <i class="fa fa-home center"></i>
+            <div class="contactInfo">
+              <h2>Visit Me</h2>
+              <div><span>21 Canal View,Housing Colony</span></div>
+              <div><span>Sheikhupura, PAK</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="footer">
+        <div class="footer-text-top">
+          Follow Me
+          <hr>
+        </div>
+        <div class="sm-icons">
+          <a href="https://facebook.com/Muhammad.Hasin.Shabbir" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://github.com/hasin-shabbir" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/muhammad-hasin-shabbir" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/hasin.shabbir/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://wa.me/923224115810" target="_blank" class="fa fa-whatsapp"></a>
+        </div>
+        <div class="footer-text-bottom">
+          <hr>
+          &copy; Muhammad Hasin Shabbir 2020
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+
+<script src="scripts/experiences.js" charset="utf-8"></script>
+<script src="scripts/skillbar.js" charset="utf-8"></script>
+<script src="scripts/particleBackground.js" charset="utf-8"></script>
+<script src="scripts/particles.min.js"></script>
+<script src="scripts/navBarStyles.js" charset="utf-8"></script>
+<script src="scripts/accordion.js" charset="utf-8"></script>
+<script src="scripts/contactForm.js" charset="utf-8"></script>
+<script src="scripts/testimonials.js" charset="utf-8"></script>
+
+</body>
+</html>

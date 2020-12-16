@@ -1,0 +1,171 @@
+.contact-wrapper{
+  padding-top: 80px;
+  background-color: white;
+  padding-bottom: 30px;
+}
+.contact-wrapper h1{
+  color:#111;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.contact-wrapper hr{
+  margin-left:auto;
+  margin-right: auto;
+  border: 1px solid #444;
+  margin-top: 4px;
+  width: 175px;
+}
+
+/*forms styles start*/
+.form-container{
+  width: 75%;
+  margin: 0 auto;
+}
+.contact-form-content{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+::-moz-input-placeholder{
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+:-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+::-webkit-textarea-placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+::-moz-textarea-placeholder{
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+:-ms-textarea-placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+::placeholder{
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+}
+
+.submitButton button{
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  min-height: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submitButton:hover button{
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  min-height: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-color: black;
+  font-weight: bold;
+}
+.contact-form-content input{
+  border: 2px solid #111;
+  margin-top: 20px;
+  min-height: 50px;
+  font-size: 20px;
+}
+.contact-form-content textarea{
+  border: 2px solid #111;
+  margin-top: 20px;
+  font-size: 20px;
+}
+textarea{
+  resize: vertical;
+  min-height: 200px;
+}
+input:required{
+  box-shadow:  0 0px 15px rgb(0,0,0,0.25);
+}
+textarea:required{
+  box-shadow:  0 0px 15px rgb(0,0,0,0.25);
+}
+/*form styles end*/
+
+/*other items styles*/
+.contact-row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contactCol4{
+  width: calc(25% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color:black;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+}
+.contactCol4 i{
+  position: relative;
+background: #fff;
+font-size: 2.5rem;
+color: #181818;
+display: block;
+width: 80px;
+height: 80px;
+margin-top:-40px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0;
+line-height: 80px;
+border-bottom: 4px solid rgba(233,233,233,0.8);
+border-radius: 0 0 100% 100%;
+}
+@media screen and (max-width: 64rem){
+  .contactCol4{
+    width: calc(33.333333% - 2rem);
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .contactCol4{
+    width: calc(75% - 2rem);
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .contactCol4{
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+  }
+}
