@@ -1,3 +1,4 @@
+// custom settings for particle background from @author Marc Bruederlin <hello@marcbruederlin.com>
 window.onload = function() {
   Particles.init({
     selector: '.background',

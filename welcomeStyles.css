@@ -15,7 +15,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0,0,0,0.60);
+  background-color: rgba(0,0,0,0.50);
 }
 .welcome-text{
   top:10%;
@@ -30,6 +30,9 @@
 }
 @media screen and (max-width:768px) {
   .welcome-text hr{width: 200px;}
+}
+#hello{
+  margin-top: 70px;
 }
 #myName{
   margin:0 0 0 0;

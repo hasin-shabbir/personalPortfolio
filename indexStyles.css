@@ -1,3 +1,4 @@
+/* general styles for the page */
 html{
   scroll-behavior: smooth;
 }
@@ -13,15 +14,7 @@ body {
 button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, textarea, textarea:active, textarea:focus{
   outline: none !important;
 }
-/* About me styles start */
-.about-me-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
+
 .row{
   display: -webkit-box;
   display: -moz-box;
@@ -31,6 +24,18 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   margin-left: 30px;
   margin-right: 30px;
 }
+
+/* About me styles start */
+.about-me-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* style the image in about me section */
 .image{
   max-width: 200px;
   z-index: 5;
@@ -49,6 +54,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   padding: 7px;
   box-shadow: 0 7px 10px #999;
 }
+/* style the introduction in about me section */
 .intro-text{
   color:#333;
   overflow: none;
@@ -92,6 +98,8 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   font-weight:400;
   font-size:16px;
 }
+
+/* style the contact info in about me section */
 .about-contact{
   max-width: 200px;
   z-index: 5;
@@ -141,6 +149,8 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 .top-gap{
   padding-top:10px
 }
+
+/* responsiveness settings for different screen sizes */
 @media screen and (max-width: 1020px){
   .about-contact{margin-top: -60px;}
 }
@@ -165,6 +175,8 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   .heading-line-small{padding-left:0;}
   .personal-wrapper{padding-left:0;}
 }
+
+
 /* accordion styles start */
 .accordion {
   background-color: white;
@@ -179,7 +191,8 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   border: 1px solid black;
 }
 
- .accordion:hover {
+/* change accordion item color on hover and opening */
+.accordion:hover {
   background-color: #ccc;
   color: black;
 }
@@ -187,6 +200,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   background-color: black;
   color:white;
 }
+/* accordion item description */
 .panel {
   padding: 0 18px;
   background-color: #f4f4f4;
@@ -214,6 +228,11 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 /* accordion styles end */
 /* About me styles end */
 
+
+
+
+
+
 /* skills styles start */
 .skills-wrapper{
   background-color: rgba(255,255,255,0.75);
@@ -226,6 +245,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   position: relative;
   z-index: 1;
 }
+/* background image for skills to overlay noise */
 .background{
   background-image: url('images/noise.png');
   opacity: 70%;
@@ -234,6 +254,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   top: 0;
   left: 0;
 }
+/* heading for skills section */
 .skills-heading p{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -250,6 +271,7 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   margin-bottom: 20px;
   width: 200px;
 }
+/* label for a skill */
 .skill-label{
   width: 75vw;
   margin: auto;
@@ -257,6 +279,8 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
   justify-content: space-between;
   font-size: 20px;
 }
+
+/* style technical skills items and skillbar */
 #codeconSkills {
    font-size: 20px;
    height: auto;
@@ -282,6 +306,9 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
     position: absolute;
     background-color: black;
 }
+
+/* animations for skillbar for each skill */
+
 @keyframes Animate-Cpp {
     from {
     width: 10px;
@@ -415,6 +442,7 @@ to {
 to {
     width: calc(0.60*75vw);}
 }
+
 /*individual bar styles CSS*/
 .codeconCSS {
     width: calc(0.68*75vw);;
@@ -425,6 +453,13 @@ to {
     height: 50px;
     position: absolute;
     background-color: black;
+}
+.codeconSkillbar{
+  margin-top: 3px;
+}
+.codeconSkillbar span{
+  position: relative;
+  top: 15%;
 }
 @keyframes Animate-CSS {
     from {
@@ -520,10 +555,12 @@ to {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.20);
   margin-right: 2px;
+  padding: 20px 0;
 }
 .otherSkill img{
   width: calc(75vw/4);
 }
+/* responsiveness settings for different screen sizes */
 @media screen and (max-width: 900px){
   .other-skills-container{
     grid-template-columns: 1fr 1fr;

@@ -1,11 +1,15 @@
+/* contact section styles */
+
+/* contact section wrapper element */
 .contact-wrapper{
   padding-top: 80px;
   background-color: white;
   padding-bottom: 30px;
 }
+/* contact section title */
 .contact-wrapper h1{
   color:#111;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -27,7 +31,7 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-
+/* style placeholder text */
 ::-webkit-input-placeholder {
   font-size: 20px;
   font-weight: 400;
@@ -64,6 +68,7 @@
   color: #444;
 }
 
+/* style submit button */
 .submitButton button{
   width: 100%;
   background-color: black;
@@ -75,6 +80,7 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .submitButton:hover button{
   width: 100%;
@@ -88,12 +94,14 @@
   border-color: black;
   font-weight: bold;
 }
+/* style input fields */
 .contact-form-content input{
   border: 2px solid #111;
   margin-top: 20px;
   min-height: 50px;
   font-size: 20px;
 }
+/* style text area */
 .contact-form-content textarea{
   border: 2px solid #111;
   margin-top: 20px;
@@ -111,7 +119,7 @@ textarea:required{
 }
 /*form styles end*/
 
-/*other items styles*/
+/*contact info items styles*/
 .contact-row{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +130,7 @@ textarea:required{
       -ms-flex-pack: center;
           justify-content: center;
 }
+/* column for contact info item */
 .contactCol4{
   width: calc(25% - 2rem);
   margin-left: 1rem;
@@ -136,22 +145,25 @@ textarea:required{
 .back .inner a{
   color: white;
 }
+/* style icons in contact info */
 .contactCol4 i{
   position: relative;
-background: #fff;
-font-size: 2.5rem;
-color: #181818;
-display: block;
-width: 80px;
-height: 80px;
-margin-top:-40px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 0;
-line-height: 80px;
-border-bottom: 4px solid rgba(233,233,233,0.8);
-border-radius: 0 0 100% 100%;
+  background: #fff;
+  font-size: 2.5rem;
+  color: #181818;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-top:-40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  line-height: 80px;
+  border-bottom: 4px solid rgba(233,233,233,0.8);
+  border-radius: 0 0 100% 100%;
 }
+
+/* adjust column size for different screen sizes */
 @media screen and (max-width: 64rem){
   .contactCol4{
     width: calc(33.333333% - 2rem);

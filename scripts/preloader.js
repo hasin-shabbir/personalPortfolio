@@ -1,4 +1,4 @@
-//change it to on document ready when the website has a lot of heavy content
+//remove the preloader after a set time interval
 var docState=document.readyState;
 
 var load=document.getElementsByClassName("loader-container");

@@ -1,12 +1,11 @@
-/* TIMELINE DESIGN */
-/* Author: Krishna Babu */
-/* Source: https://codepen.io/krishnab/pen/OPwqbW/ */
+/* work experience styles */
 
 .experiences-wrapper{
   background-color: black;
   padding-top: 80px;
   padding-bottom: 30px;
 }
+/* work experience title */
 .experiences-wrapper h1{
   font-size: 2.5rem;
   font-weight: normal;
@@ -24,23 +23,14 @@
   margin-top: 4px;
   width: 175px;
 }
-.experiences-wrapper h2{
-  font-size: 1rem;
-  font-weight: normal;
-  color: #888;
-  text-align: center;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
+/* hide work experience item, brought into visibility by js when the item is in viewport */
 #experience-item{
   visibility: hidden;
   transition: 0.4s;
 }
 
-
+/* hexagon shape for timeline */
 .hexa{
   border: 0px;
   float: left;
@@ -53,7 +43,6 @@
   position: relative;
   margin-top: 15px;
 }
-
 .hexa:before{
   content: "";
   position: absolute;
@@ -65,7 +54,6 @@
   border-right: 30px solid transparent;
   top: -15px;
 }
-
 .hexa:after{
   content: "";
   position: absolute;
@@ -78,6 +66,7 @@
   bottom: -15px;
 }
 
+/* work experience timeline */
 .timeline {
   position: relative;
   padding: 0;
@@ -105,10 +94,11 @@
   z-index: 5;
 }
 
+/* padding for timeline items */
 .timeline li {
   padding: 2em 0;
 }
-
+/* style hexagon shape on timeline */
 .timeline .hexa{
   width: 16px;
   height: 10px;
@@ -137,6 +127,7 @@
   bottom: -4px;
 }
 
+/* float the work items */
 .direction-l,
 .direction-r {
   float: none;
@@ -144,6 +135,7 @@
   text-align: center;
 }
 
+/* position the flag/title for each work item */
 .flag-wrapper {
   text-align: center;
   position: relative;
@@ -155,7 +147,7 @@
   background: rgb(255,255,255);
   font-weight: 600;
   z-index: 15;
-  padding: 6px 10px;
+  padding: 8px 10px;
   text-align: left;
   border-radius: 5px;
   color:black;
@@ -188,6 +180,7 @@
   box-shadow: 1px 1px 1px rgba(255,255,255,0.15), 0 0 1px rgba(255,255,255,0.15);
 }
 
+/* style the time duration for each work item */
 .time-wrapper {
   display: block;
   position: relative;
@@ -212,6 +205,7 @@
   padding: 8px;
 }
 
+/* style work description */
 .desc {
   position: relative;
   margin: 1em 0 0 0;
@@ -251,6 +245,7 @@
   z-index: 15;
 }
 
+/* responsiveness queries for different screen sizes */
 @media(min-width: 768px){
   .timeline {
     width: 660px;
@@ -276,14 +271,14 @@
     left: auto;
     right: -28px;
   }
-
+  /* direction-l items float to left */
   .direction-l {
     position: relative;
     width: 310px;
     float: left;
     text-align: right;
   }
-
+  /* direction-r items float to right */
   .direction-r {
     position: relative;
     width: 310px;

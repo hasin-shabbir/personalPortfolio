@@ -4,22 +4,22 @@
   <title>Hasin's Portfolio</title>
   <meta dir="ltr" lang="en-US">
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="indexStyles.css">
-  <link rel="stylesheet" href="ribbonStyles.css">
-  <link rel="stylesheet" href="navBarStyles.css">
-  <link rel="stylesheet" href="welcomeStyles.css">
-  <link rel="stylesheet" href="preloader.css">
-  <link rel="stylesheet" href="portfolioStyles.css">
-  <link rel="stylesheet" href="experiencesStyles.css">
-  <link rel="stylesheet" href="testimonialsStyles.css">
-  <link rel="stylesheet" href="contactForm.css">
-  <link rel="stylesheet" href="footerStyles.css">
+  <link rel="icon" href="images/favicon.png"><!--favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--icons-->
+  <link rel="stylesheet" href="indexStyles.css"><!--index page styles-->
+  <link rel="stylesheet" href="navBarStyles.css"><!--navigation styles-->
+  <link rel="stylesheet" href="welcomeStyles.css"><!--landing section styles-->
+  <link rel="stylesheet" href="preloader.css"><!--preloader styles-->
+  <link rel="stylesheet" href="portfolioStyles.css"><!--portfolio/projectd styles-->
+  <link rel="stylesheet" href="experiencesStyles.css"><!--work experiences styles-->
+  <link rel="stylesheet" href="testimonialsStyles.css"><!--testimonials styles-->
+  <link rel="stylesheet" href="contactForm.css"><!--contact form styles-->
+  <link rel="stylesheet" href="footerStyles.css"><!--footer styles-->
+  <!--fonts: -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!--Design inspired from Marqa by Ahmed Beheiry-->
 </head>
 <body>
 
@@ -46,19 +46,19 @@
              <a href="#experience"  onclick="javascript:closeNav()">Experiences</a>
              <a href="#testimonials"  onclick="javascript:closeNav()">Testimonials</a>
              <a href="#contact" onclick="javascript:closeNav()">Contact Me</a>
-             <a href="https://drive.google.com/file/d/1FluyP9szGWSVFkwcWQOoG1__SVhRxoWc/view" onclick="javascript:closeNav()" target="_blank">Resume</a>
+             <a href="https://drive.google.com/file/d/1jY_PBCYVpvWcfDXv23IWP4yVovKS_IiS/view?usp=sharing" onclick="javascript:closeNav()" target="_blank">Resume</a>
            </div>
         </div>
-        <!-- Use any element to open/show the overlay navigation menu -->
+        <!-- element to open/show the overlay navigation menu -->
         <span onclick="openNav()"><i class="fa fa-bars"></i></span>
       </div>
     <div class="content">
 
-      <!--<div class="corner-ribbon bottom-left sticky black"><a href="https://drive.google.com/file/d/1FluyP9szGWSVFkwcWQOoG1__SVhRxoWc/view" target="_blank">Resume</a></div>-->
-
+      <!-- landing section -->
       <section class="welcome-wrapper" id="home">
+        <!-- welcome text -->
         <div class="welcome-text">
-          <p>HELLO, IT'S ME</p>
+          <p id="hello">HELLO, IT'S ME</p>
           <hr>
           <h1 id="myName">MUHAMMAD HASIN SHABBIR</h1>
           <hr>
@@ -67,17 +67,20 @@
           <a class="welcome-button" href="#portfolio">My works</a>
         </div>
       </section>
+      <!-- end of landing section -->
 
-
+      <!-- about me section -->
       <section class="about-me-wrapper" id="about">
         <div class="about-me-container" style="padding-bottom: 0px;">
           <div class="row">
             <div class="column4">
 
             </div>
+            <!-- picture left -->
             <div class="image">
               <img id="pic" src="images/myPhotos/myFace.jpg" alt="my face">
             </div>
+            <!-- intro right -->
             <div class="intro-text">
     					<h2 class="intro-name">Muhammad Hasin Shabbir</h2>
     					<hr class="heading-line">
@@ -88,6 +91,7 @@
         </div>
         <div class="about-me-container top-gap">
           <div class="row">
+            <!-- contact info left -->
             <div class="about-contact">
     					<h3 class="main-heading">personal info</h3>
     					<hr class="heading-line-small">
@@ -106,13 +110,14 @@
     						</span>
     					</div>
             </div>
+            <!-- accordion right -->
             <div class="intro-text">
               <button class="accordion">What is my goal?</button>
               <section class="panel">
                 <p>While I do have some material targets set that I would want to achieve, my true goal is making a positive impact. No matter how big or small that impact is, whatever I do I want to do in a way that will make someone's life better in some aspect. I believe it is this experience that will offer me the opportunities to engage and learn a lot more, eventually growing as a person.</p>
               </section>
 
-              <button class="accordion">What am I really good at?</button>
+              <button class="accordion">What are my strengths?</button>
               <section class="panel">
                 <p>Even if perfection is not possible, I think there are some things I am quite proficient at.  After spending countless hours learning, practicing and rectifying mistakes, <strong>computer programming and problem solving ability</strong> are some of the strongest among my skill set. Additionally, I believe I have <strong>good communication skills</strong> and can convey my message in an easy yet effective manner. I have also been told I can be a really <strong>good friend</strong> - maybe you should see for yourself? :)</p>
               </section>
@@ -132,155 +137,192 @@
           </div>
         </div>
     </section>
+    <!-- end of about me section -->
 
-
-    <div class="skills-wrapper" id="skills">
+    <!-- skills section -->
+      <div class="skills-wrapper" id="skills">
         <div class="skills-container">
           <div class="skills-heading">
             <h1>Technical Skills</h1>
             <hr>
             <div class="skill-label">
-              <p>Just starting</p>
-              <p>I'm pretty good</p>
+              <p>I'm starting</p>
+              <p>Highly proficient</p>
             </div>
           </div>
+
+          <!-- technical skills skill bar -->
           <div id="codeconSkills">
+
             <div class="codeconSkillbar">
-              <div class="skill-Cpp " id="techSkill">
+              <div class="skill-Cpp techSkill" >
                 <span class="codeconSkillArea">C++<img src="images/icon/cpp.png" alt="Cpp"></span>
               </div>
             </div>
-            <div class="codeconSkillbar" id="techSkill">
-              <div class="skill-Py " id="techSkill">
+
+            <div class="codeconSkillbar">
+              <div class="skill-Py techSkill" >
                 <span class="codeconSkillArea">Python<img src="images/icon/python.png" alt="python"></span>
               </div>
             </div>
+
             <div class="codeconSkillbar">
-              <div class="skill-HTML " id="techSkill">
+              <div class="skill-HTML techSkill" >
                 <span class="codeconSkillArea">HTML5<img src="images/icon/html5.png" alt="HTML5"></span>
               </div>
             </div>
+
             <div class="codeconSkillbar">
-              <div class="skill-JS " id="techSkill">
+              <div class="skill-JS techSkill" >
                 <span class="codeconSkillArea">JavaScript<img src="images/icon/javascript.png" alt="JavaScript"></span>
               </div>
             </div>
+
             <div class="codeconSkillbar">
-              <div class="skill-CSS " id="techSkill">
+              <div class="skill-CSS techSkill" >
                 <span class="codeconSkillArea">CSS<img src="images/icon/css3.png" alt="CSS3"></span>
               </div>
             </div>
+
             <div class="codeconSkillbar">
-              <div class="skill-Mailchimp " id="techSkill">
+              <div class="skill-Mailchimp techSkill" >
                 <span class="codeconSkillArea">Mailchimp<img src="images/icon/mailchimp.png" alt="mailchimp"></span>
               </div>
             </div>
+
+            <!-- other skills -->
             <div class="skills-heading-small">
               <h1>Other Skills</h1>
               <hr>
             </div>
             <div class="other-skills-container">
+
               <div class="otherSkill">
                 <img src="images/icon/socialMedia.png" alt="social media">
                 <p>Social Media Marketing</p>
               </div>
+
               <div class="otherSkill">
-                <img src="images/icon/communication.png" alt="communication">
+                <img src="images/communication.svg" alt="communication">
                 <p>Communication</p>
               </div>
+
               <div class="otherSkill">
                 <img src="images/icon/problemSolving.png" alt="problem solving">
                 <p>Creative Problem Solving</p>
               </div>
+
               <div class="otherSkill">
                 <img src="images/icon/design.png" alt="design">
                 <p>Canva | Photoshop</p>
               </div>
+
             </div>
           </div>
         </div>
+        <!-- background canvas for skills section -->
         <canvas class="background"></canvas>
       </div>
 
-
+      <!-- portfolio/projects section -->
       <div class="portfolio-wrapper" id="portfolio">
         <div class="card-wrapper">
           <h1>My Projects</h1>
           <hr>
-          <h2>Click/Hover for Details</h2>
           <div class="card-cols">
+            <!-- portfolio item -->
             <div class="card-col" ontouchstart="this.classList.toggle('hover');">
               <div class="card-container">
-                <div class="front" style="background-image: url('images/funkaari.jpg')">
+                <!-- card front side -->
+                <div class="front" style="background-image: url('images/30mff.png')">
                   <div class="inner">
-                    <p>Funkaari</p>
-                    <span>VR Application</span>
+                    <p>Quarantine Madness</p>
+                    <span>Movie Project</span>
                   </div>
                 </div>
+                <!-- card back side -->
                 <div class="back">
                   <div class="inner">
-                    <p>Programmed in C# using Unity, the application provides an environment for painting in 3 dimensions.</p>
-                    <a href="https://drive.google.com/file/d/1YO57zIv5Z9hqZ9aeCsYMLy8MnEoOAkJ-/view?usp=sharing" target="_blank">Visit</a>
+                    <p>A website showcasing a movie of four teenagers stranded on an island in the middle of a pandemic.</p>
+                    <a href="https://github.com/hasin-shabbir/quarantineMadness">Read More</a><br>
+                    <a href="https://hasin-shabbir.github.io/quarantineMadness/" target="_blank">Visit</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- portfolio item -->
             <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://hasin-shabbir.github.io/nyuadSites/" target="_blank">
               <div class="card-container">
-                <div class="front" style="background-image: url('images/nyuad_front.png')">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/comicStrip.png')">
                   <div class="inner">
-                    <p>NYUAD Sites</p>
+                    <p>Comix Strip</p>
                     <span>Website</span>
                   </div>
                 </div>
+                <!-- card back -->
                 <div class="back">
                   <div class="inner">
-                    <p>A collection of NYU Abu Dhabi related webpages and groups.</p>
-                    <a href="https://hasin-shabbir.github.io/nyuadSites/" target="_blank">Visit</a>
+                    <p>Sometimes life is unpredictable - and this comic strip is one such unpredictable story</p>
+                    <a href="https://github.com/hasin-shabbir/comicStrip">Read More</a><br>
+                    <a href="https://hasin-shabbir.github.io/comicStrip/" target="_blank">Visit</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- portfolio item -->
             <div class="card-col" ontouchstart="this.classList.toggle('hover');" href="https://docs.google.com/presentation/d/1lrNK2iRwvUvGq9c-Qx0aIajkBD5kY3WeM1xz102qd1Q/edit?usp=sharing" target="_blank">
               <div class="card-container">
-                <div class="front" style="background-image: url('images/kickboxing.jpg')">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/soundProject.png')">
                   <div class="inner">
-                    <p>SoloTrainer</p>
-                    <span>Combat Sports Training Device</span>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="inner">
-                    <p>Arduino based device that provides training feedback to combat sports athletes.</p>
-                    <a href="https://docs.google.com/presentation/d/1lrNK2iRwvUvGq9c-Qx0aIajkBD5kY3WeM1xz102qd1Q/edit?usp=sharing" target="_blank">Visit</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
-              <div class="card-container">
-                <div class="front" style="background-image: url('images/nyuad_back.png')">
-                  <div class="inner">
-                    <p>NYUAD Course Review</p>
+                    <p>Melody</p>
                     <span>Website</span>
                   </div>
                 </div>
+                <!-- card back -->
                 <div class="back">
                   <div class="inner">
-                    <p>(UNDER DEVELOPMENT) Website to post and access reviews for NYUAD Courses.</p>
+                    <p>A journey through sound in Pakistan and Vietnam</p>
+                    <a href="https://github.com/hasin-shabbir/soundProject">Read More</a><br>
+                    <a href="https://hasin-shabbir.github.io/soundProject/" target="_blank">Visit</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="card-col" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-container">
+                <!-- card front -->
+                <div class="front" style="background-image: url('images/movie.png')">
+                  <div class="inner">
+                    <p>Trapped</p>
+                    <span>Website</span>
+                  </div>
+                </div>
+                <!-- card back -->
+                <div class="back">
+                  <div class="inner">
+                    <p>The story of Ishmal Khalid, as she tries to escape her modern day demons of technology</p>
+                    <a href="https://github.com/hasin-shabbir/movie">Read More</a><br>
+                    <a href="https://hasin-shabbir.github.io/movie/" target="_blank">Visit</a>
                   </div>
                 </div>
               </div>
             </div>
-        		</div>
+      		</div>
+
          </div>
       </div>
 
-
+      <!-- work experience section -->
+      <!-- direction-r is for right side items, direction-l is for left side items-->
       <section class="experiences-wrapper" id="experience">
         <h1>Work Experiences</h1>
         <hr>
-        <h2>Keep scrolling</h2>
         <ul class="timeline">
           <!-- Item 1 -->
           <li>
@@ -369,31 +411,36 @@
         </ul>
       </section>
 
-
+      <!-- testimonials section -->
       <section class="testimonials-wrapper" id="testimonials">
         <h2>Testimonials</h2>
         <hr>
         <div class="slideshow-container">
+          <!-- testimonial 1 -->
           <div class="mySlides">
-            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Lorem ipsum</p>
+            <q>Working with Hasin was a really great experience; I found him to be a really good team player and a person with the ability to come up with really creative ideas</q>
+            <p class="author">- Ishmal Khalid</p>
           </div>
 
+          <!-- testimonial 2 -->
           <div class="mySlides">
-            <q>Changed Lorem ipsum amet sit dolor</q>
-            <p class="author">- Lorem ipsum</p>
+            <q>His level of command in web design and his ability to learn and understand new things is really amazing</q>
+            <p class="author">- Ayesha Zafar</p>
           </div>
 
+          <!-- testimonial 3 -->
           <div class="mySlides">
-            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
-            <p class="author">- Lorem ipsum</p>
+            <q>Would definitely work with him again!</q>
+            <p class="author">- Anas Gadar</p>
           </div>
 
+          <!-- testimonial carousel arrow controls -->
           <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
 
           </div>
 
+          <!-- testimonial carousel dot controls -->
           <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -402,24 +449,34 @@
       </section>
 
 
+      <!-- iframe target for contact form submission to stay on the same page after submission -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
       onload="if(submitted){window.location='https://www.google.com';}"></iframe>
+      <!-- contact section -->
       <section class="contact-wrapper" id="contact">
         <h1>Contact Me</h1>
         <hr>
         <div class="form-container">
+          <!-- contact form linked to a google form and Collecting submissions in google spreadsheet-->
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdngNRiMLGWfRLyEuG2NKXVaqoo3gyNJIaM1c_UKYKh91OWpQ/formResponse" method="POST" target="hidden_iframe">
     				<div class="contact-form-content">
+                <!-- name field -->
   	    				<input type="text" name="entry.860598839" placeholder="Your Name" id="formItem-1" required>
-  	    				<input type="text" name="entry.1376670077" placeholder="Enter a Valid Email Address" id="formItem-2" required>
-  	    				<textarea name="entry.866587573" placeholder="Your Message" id="formItem-3" required></textarea>
-    	  				<div class="submitButton">
+                <!-- email field -->
+                <input type="text" name="entry.1376670077" placeholder="Enter a Valid Email Address" id="formItem-2" required>
+                <!-- message field -->
+                <textarea name="entry.866587573" placeholder="Your Message" id="formItem-3" required></textarea>
+                <!-- submit button -->
+                <div class="submitButton">
         						<button id="submit" type="submit" target="hidden_iframe">Send</button>
     					  </div>
     				</div>
     			</form>
         </div>
+
+        <!-- contact information -->
         <div class="contact-row">
+          <!-- phone number -->
           <a class="contactCol4" href="tel:+971501437184">
             <i class="fa fa-phone center"></i>
             <div class="contactInfo">
@@ -428,6 +485,7 @@
               <div><span>(+92) 322 4115 810</span></div>
             </div>
           </a>
+          <!-- email address -->
           <a class="contactCol4" href="mailto:hasin.shabbir@nyu.edu">
             <i class="fa fa-envelope center"></i>
             <div class="contactInfo">
@@ -435,6 +493,7 @@
               <div><span>hasin.shabbir@nyu.edu</span></div>
             </div>
           </a>
+          <!-- home address -->
           <a class="contactCol4" href="https://www.google.com/maps/@31.7079529,74.0232463,83m" target="_blank">
             <i class="fa fa-home center"></i>
             <div class="contactInfo">
@@ -446,12 +505,13 @@
         </div>
       </section>
 
-
+      <!-- footer section -->
       <section class="footer">
         <div class="footer-text-top">
           Follow Me
           <hr>
         </div>
+        <!-- social media icons -->
         <div class="sm-icons">
           <a href="https://facebook.com/Muhammad.Hasin.Shabbir" target="_blank" class="fa fa-facebook"></a>
           <a href="https://github.com/hasin-shabbir" target="_blank" class="fa fa-github"></a>
@@ -459,6 +519,7 @@
           <a href="https://www.instagram.com/hasin.shabbir/" target="_blank" class="fa fa-instagram"></a>
           <a href="https://wa.me/923224115810" target="_blank" class="fa fa-whatsapp"></a>
         </div>
+        <!-- footer text -->
         <div class="footer-text-bottom">
           <hr>
           &copy; Muhammad Hasin Shabbir 2020
@@ -469,13 +530,20 @@
     </div>
   </div>
 
+<!-- script for work experience section -->
 <script src="scripts/experiences.js" charset="utf-8"></script>
+<!-- script for skills bar -->
 <script src="scripts/skillbar.js" charset="utf-8"></script>
+<!-- scripts for particle background -->
 <script src="scripts/particleBackground.js" charset="utf-8"></script>
 <script src="scripts/particles.min.js"></script>
+<!-- script for navbar -->
 <script src="scripts/navBarStyles.js" charset="utf-8"></script>
+<!-- script for accordion in about me section -->
 <script src="scripts/accordion.js" charset="utf-8"></script>
+<!-- script for contact form -->
 <script src="scripts/contactForm.js" charset="utf-8"></script>
+<!-- script for testimonials carousel -->
 <script src="scripts/testimonials.js" charset="utf-8"></script>
 
 </body>
