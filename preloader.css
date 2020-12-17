@@ -11,6 +11,7 @@ body{
 .hidden{
   opacity: 0;
 }
+/* container for preloader */
 .loader-container{
   transition: 0.6s;
   position:fixed;
@@ -23,6 +24,7 @@ body{
   background: #111;
   width: 100%;
 }
+/* the preloader text element */
 .loader {
   z-index: 1001;
   width: 400px;
@@ -40,6 +42,7 @@ body{
   color: white;
   letter-spacing: 0.2em;
 }
+/* animating the preloader text surroundings */
 .loader::before, .loader::after {
   content: "";
   display: block;
@@ -56,25 +59,8 @@ body{
 .loader::after {
   bottom: 0;
 }
-
+/* animation for the preloader text */
 @-webkit-keyframes load {
-  0% {
-    left: 0;
-    height: 30px;
-    width: 15px;
-  }
-  50% {
-    height: 8px;
-    width: 40px;
-  }
-  100% {
-    left: 385px;
-    height: 30px;
-    width: 15px;
-  }
-}
-
-@keyframes load {
   0% {
     left: 0;
     height: 30px;

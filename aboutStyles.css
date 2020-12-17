@@ -1,0 +1,202 @@
+/* About me styles start */
+.about-me-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* style the image in about me section */
+.image{
+  max-width: 200px;
+  z-index: 5;
+  margin-left: 40px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  padding-left: 62px;
+  padding-right: 62px;
+}
+.image img{
+  max-width: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #dedede;
+  background: #fff;
+  padding: 7px;
+  box-shadow: 0 7px 10px #999;
+}
+/* style the introduction in about me section */
+.intro-text{
+  color:#333;
+  overflow: none;
+  width: calc(100%-300px);
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+.intro-name{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size:24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.heading-line{
+  border-top: 2px solid black;
+  width: 270px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.heading-line-small{
+  border-top: 2px solid black;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 0;
+  padding-left: 10px;
+}
+.intro-summary{
+  font-size: 16px;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.intro-description{
+  color: #777;
+  font-weight:400;
+  font-size:16px;
+}
+
+/* style the contact info in about me section */
+.about-contact{
+  max-width: 200px;
+  z-index: 5;
+  margin-left: 40px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  padding-left: 62px;
+  padding-right: 62px;
+}
+.main-heading{
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  padding-left: 20px;
+}
+.personal-wrapper{
+  display: webkit-box;
+  display: ms-flexbox;
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  text-align: center;
+  visibility: visible;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.personal-wrapper span{
+  margin: 5px 0 10px;
+  color: #555;
+}
+.personal-wrapper strong{
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.personal-wrapper a{
+  text-decoration: none;
+  color: #000;
+}
+.top-gap{
+  padding-top:10px
+}
+
+/* responsiveness settings for different screen sizes */
+@media screen and (max-width: 1020px){
+  .about-contact{margin-top: -60px;}
+}
+@media screen and (max-width: 950px){
+  .about-contact{margin-top: -80px;}
+}
+@media screen and (max-width: 900px){
+  .about-contact{margin-top: -120px;}
+}
+@media screen and (max-width: 885px){
+  .about-contact{margin-top: -170px;}
+}
+@media screen and (max-width: 850px) {
+  .row{display: initial; margin:0;text-align: center;}
+  .image{margin:0 0 0 0;}
+  .heading-line{margin-left: 50%;top:50%;transform: translate(-50%,-50%);}
+  .intro-text{padding:0 0 0 0;margin-top: 20px;margin-left: 10px;margin-right: 10px;margin-bottom: 10px;}
+  .row div{display: inline-block;}
+  .about-contact{margin:0 0 0 0;}
+  .top-gap{padding-top:0;}
+  .main-heading{padding-left:0;}
+  .heading-line-small{padding-left:0;}
+  .personal-wrapper{padding-left:0;}
+}
+
+
+/* accordion styles start */
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+
+/* change accordion item color on hover and opening */
+.accordion:hover {
+  background-color: #ccc;
+  color: black;
+}
+.accordion.active{
+  background-color: black;
+  color:white;
+}
+/* accordion item description */
+.panel {
+  padding: 0 18px;
+  background-color: #f4f4f4;
+  color: #555;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.accordion.active::after{
+  content: "\2212";
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+}
+.accordion::after{
+  content: '\002B';
+  color: black;
+  font-weight: bolder;
+  float: right;
+  margin-left: 5px;
+}
+.intro-text button{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+/* accordion styles end */
+/* About me styles end */

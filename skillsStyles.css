@@ -1,0 +1,341 @@
+/* skills styles start */
+.skills-wrapper{
+  background-color: rgba(255,255,255,0.75);
+  position: relative;
+  padding-bottom: 60px;
+}
+.skills-container{
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+/* background image for skills to overlay noise */
+.background{
+  background-image: url('images/noise.png');
+  opacity: 70%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* heading for skills section */
+.skills-heading p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.skills-heading h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.skills-heading hr{
+  margin-left:auto;
+  margin-right: auto;
+  border: 2px solid white;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+/* label for a skill */
+.skill-label{
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+/* style technical skills items and skillbar */
+#codeconSkills {
+   font-size: 20px;
+   height: auto;
+   width: 75vw;
+   margin: auto;
+}
+.codeconSkillbar {
+   height: 50px;
+   width: 75vw;
+   position: relative;
+   background: rgba(17, 17, 17, .3);
+   padding-bottom: 2px;
+}
+.codeconSkillArea img{float:right;}
+/*individual bar styles C++*/
+.codeconCpp {
+    width: calc(0.9*75vw);
+    animation: Animate-Cpp 4s;
+    -webkit-animation: Animate-Cpp 4s;
+    -moz-animation: Animate-Cpp 4s;
+    -o-animation: Animate-Cpp 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+
+/* animations for skillbar for each skill */
+
+@keyframes Animate-Cpp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.9*75vw);}
+}@-webkit-keyframes Animate-Cpp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.9*75vw);}
+}@-moz-keyframes Animate-Cpp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.9*75vw);}
+}@-o-keyframes Animate-Cpp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.9*75vw);}
+}
+/*individual bar styles Python*/
+.codeconPy {
+    width: calc(0.75*75vw);
+    animation: Animate-Py 4s;
+    -webkit-animation: Animate-Py 4s;
+    -moz-animation: Animate-Py 4s;
+    -o-animation: Animate-Py 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+@keyframes Animate-Py {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.75*75vw);}
+}@-webkit-keyframes Animate-Py {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.75*75vw);}
+}@-moz-keyframes Animate-Py {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.75*75vw);}
+}@-o-keyframes Animate-Py {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.75*75vw);}
+}
+/*individual bar styles HTML*/
+.codeconHTML {
+    width: calc(0.8*75vw);
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.8*75vw);}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.8*75vw);}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 75vw}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.8*75vw);}
+}
+/*individual bar styles JavaScript*/
+.codeconJS {
+    width: calc(0.60*75vw);
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.60*75vw);}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.60*75vw);}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.60*75vw);}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.60*75vw);}
+}
+
+/*individual bar styles CSS*/
+.codeconCSS {
+    width: calc(0.68*75vw);;
+    animation: Animate-CSS 4s;
+    -webkit-animation: Animate-CSS 4s;
+    -moz-animation: Animate-CSS 4s;
+    -o-animation: Animate-CSS 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+.codeconSkillbar{
+  margin-top: 3px;
+}
+.codeconSkillbar span{
+  position: relative;
+  top: 15%;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.68*75vw);}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.68*75vw);}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.68*75vw);}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.68*75vw);}
+}
+/*individual bar styles Mailchimp*/
+.codeconMailchimp {
+    width: calc(0.90*75vw);
+    animation: Animate-Mailchimp 4s;
+    -webkit-animation: Animate-Mailchimp 4s;
+    -moz-animation: Animate-Mailchimp 4s;
+    -o-animation: Animate-Mailchimp 4s;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+}
+@keyframes Animate-Mailchimp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.90*75vw);}
+}@-webkit-keyframes Animate-Mailchimp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.90*75vw);}
+}@-moz-keyframes Animate-Mailchimp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.90*75vw);}
+}@-o-keyframes Animate-Mailchimp {
+    from {
+    width: 10px;
+}
+to {
+    width: calc(0.90*75vw);}
+}
+
+/*other skills styles */
+.skills-heading-small{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.skills-heading-small p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.skills-heading-small h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.skills-heading-small hr{
+  margin-left:auto;
+  margin-right: auto;
+  border: 1px solid white;
+  margin-top: 4px;
+  margin-bottom: 40px;
+  width: 150px;
+}
+.other-skills-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: -3px;
+}
+.otherSkill{
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.20);
+  margin-right: 2px;
+  padding: 20px 0;
+}
+.otherSkill img{
+  width: calc(75vw/4);
+}
+/* responsiveness settings for different screen sizes */
+@media screen and (max-width: 900px){
+  .other-skills-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .otherSkill{padding-top: 30px;}
+}
+@media screen and (max-width: 768px){
+  .skills-heading hr{width: 150px;}
+  .skills-heading-small hr{width:125px;}
+  .skill-label p{font-size: 14px;}
+}
+/* skills styles end */

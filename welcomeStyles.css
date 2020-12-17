@@ -1,3 +1,5 @@
+/* landing section stylesheet */
+
 .welcome-wrapper {
   position: relative;
   display: flex;
@@ -17,6 +19,7 @@
   left: 0px;
   background-color: rgba(0,0,0,0.50);
 }
+/* landing section heading */
 .welcome-text{
   top:10%;
   opacity: 100%;
@@ -28,9 +31,11 @@
   border-top: 2px solid white;
   width: 400px;
 }
+/* responsiveness setting for different screensizes */
 @media screen and (max-width:768px) {
   .welcome-text hr{width: 200px;}
 }
+/* text in the landing section */
 #hello{
   margin-top: 70px;
 }
@@ -42,6 +47,8 @@
 .welcome-text p{
   font-size: 18px;
 }
+
+/* buttons in the landing section */
 .welcome-wrapper a{
   background-color: rgba(255,255,255,0.30);
   border: 1px solid #fff;
